@@ -1,0 +1,9 @@
+<ul>
+  <% @songs.each_with_index do |song, index| %>
+    <a href="/songs/<%= index + 1 %>">
+      <li>
+        <%= song %>
+      </li>
+    </a>
+  <% end %>
+</ul>
